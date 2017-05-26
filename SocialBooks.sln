@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialBooks.Models", "SocialBooks.Models\SocialBooks.Models.csproj", "{59546FDC-70A1-4510-A159-050480CC279A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialBooks.Data", "SocialBooks.Data\SocialBooks.Data.csproj", "{09215215-38E5-41B7-A125-EBE7F10E5820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialBooks.Api", "SocialBooks.Api\SocialBooks.Api.csproj", "{E960EEC2-0C60-45A9-82F7-6629D87FA2DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59546FDC-70A1-4510-A159-050480CC279A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59546FDC-70A1-4510-A159-050480CC279A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59546FDC-70A1-4510-A159-050480CC279A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59546FDC-70A1-4510-A159-050480CC279A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09215215-38E5-41B7-A125-EBE7F10E5820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09215215-38E5-41B7-A125-EBE7F10E5820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09215215-38E5-41B7-A125-EBE7F10E5820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09215215-38E5-41B7-A125-EBE7F10E5820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E960EEC2-0C60-45A9-82F7-6629D87FA2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E960EEC2-0C60-45A9-82F7-6629D87FA2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E960EEC2-0C60-45A9-82F7-6629D87FA2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E960EEC2-0C60-45A9-82F7-6629D87FA2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
