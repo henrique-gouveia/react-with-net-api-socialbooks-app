@@ -6,7 +6,7 @@ using SocialBooks.Data.Configurations;
 
 namespace SocialBooks.Data.Context
 {
-    class SocialBooksContext : DbContext
+    public class SocialBooksContext : DbContext
     {
         public SocialBooksContext() : base("socialbooks")
         {

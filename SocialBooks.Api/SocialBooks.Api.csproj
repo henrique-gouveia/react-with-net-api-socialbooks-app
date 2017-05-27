@@ -176,6 +176,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AutorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -254,6 +255,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SocialBooks.Data\SocialBooks.Data.csproj">
+      <Project>{2D7F4E8C-72AD-4EDB-944D-185E9A940CD6}</Project>
+      <Name>SocialBooks.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SocialBooks.Models\SocialBooks.Models.csproj">
+      <Project>{8CB19108-AC23-4E7A-AED9-A5629F6D8D81}</Project>
+      <Name>SocialBooks.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
