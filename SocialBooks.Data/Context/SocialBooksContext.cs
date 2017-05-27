@@ -38,8 +38,11 @@ namespace SocialBooks.Data.Context
                 .Configure(p => p.HasMaxLength(100));
 
             modelBuilder.Configurations.Add(new AutorConfiguration());
+            modelBuilder.Configurations.Add(new LivroConfiguration());
         }
 
         public DbSet<Autor> Autores { get; set; }
+
+        public DbSet<Livro> Produtos { get; set; }
     }
 }
