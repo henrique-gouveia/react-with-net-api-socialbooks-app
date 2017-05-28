@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using Newtonsoft.Json;
 
 namespace SocialBooks.Api
 {
@@ -10,6 +8,15 @@ namespace SocialBooks.Api
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+
+            // Configuração de Serialização JSON indicando:
+            // 1. Não inclusão de propriedades com valores Nulls
+            var jsonSerializerSettings = new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore
+            };
+
+            config.Formatters.JsonFormatter.SerializerSettings = jsonSerializerSettings;
 
             // Web API routes
             config.MapHttpAttributeRoutes();

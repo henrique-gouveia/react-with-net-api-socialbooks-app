@@ -1,15 +1,21 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace SocialBooks.Models.Entities
 {
     public class Livro
     {
+        public Livro()
+        {
+            DtCadastro = DateTime.Now;
+            DtPublicacao = DateTime.Now;
+        }
+
         public int Id { get; set; }
 
         public int AutorId { get; set; }
 
-        // Necessário ser virtual para o mecanismo de Lazy do 
-        // EntityFramework poder sobrescrever
+        [JsonIgnore]
         public virtual Autor Autor { get; set; }
 
         public string Nome { get; set; }

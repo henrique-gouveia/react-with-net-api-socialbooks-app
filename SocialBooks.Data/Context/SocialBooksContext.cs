@@ -15,6 +15,16 @@ namespace SocialBooks.Data.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            /* 
+                Info: Membros com Lazy Loading devem ser virtual 
+                para que o mecanismo de Lazy do EntityFramework 
+                possa sobrescrever.
+
+                Exemplos: 
+                    1. public virtual Entity Entity { get; set; }
+                    2. public virtual IEnumerable<TEntity> Entities { get; set; }
+            */
+
             // Não pluralizar nome das tabelas
             modelBuilder
                 .Conventions
