@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.SqlServer;
 
 using SocialBooks.Models.Entities;
 using SocialBooks.Data.Configurations;
@@ -8,9 +9,20 @@ namespace SocialBooks.Data.Context
 {
     public class SocialBooksContext : DbContext
     {
+
         public SocialBooksContext() : base("socialbooks")
         {
 
+        }
+
+        private static void LoadProviderService()
+        {
+            /*
+                Este é um hack para garantir que Entity Framework SQL Provider 
+                seja copiado para o output folder corrigindo o erro "Provider not loaded". 
+                Como ele é instalado no GAC, Copiar Local não funciona. 
+            */
+            var instance = SqlProviderServices.Instance;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
