@@ -4,6 +4,7 @@ using System.Data.Entity;
 
 using SocialBooks.Data.Context;
 using SocialBooks.Models.Interfaces;
+using System.Linq;
 
 namespace SocialBooks.Data.Repositories
 {
@@ -37,6 +38,11 @@ namespace SocialBooks.Data.Repositories
         {
             context.Set<TEntity>().Remove(entity);
             context.SaveChanges();
+        }
+
+        public IQueryable<TEntity> Query
+        {
+            get { return context.Set<TEntity>(); }
         }
 
         public void Dispose()

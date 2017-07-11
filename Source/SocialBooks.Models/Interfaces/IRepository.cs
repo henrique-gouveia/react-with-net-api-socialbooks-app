@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace SocialBooks.Models.Interfaces
 {
@@ -13,6 +14,8 @@ namespace SocialBooks.Models.Interfaces
         void Update(TEntity entity);
 
         void Delete(TEntity entity);
+
+        IQueryable<TEntity> Query { get; }
 
         void Dispose();
     }
