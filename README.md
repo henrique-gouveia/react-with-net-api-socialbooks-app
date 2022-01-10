@@ -1,3 +1,3 @@
 # SocialBooks
 
-Controle Livros com foco em exemplificar o uso integrado das tecnologias reactjs e web api com .net framework.
+Aplicação Web de Controle Livros com foco em exemplificar o uso integrado das tecnologias `Reactjs` e web api com `.Net Framework`.
